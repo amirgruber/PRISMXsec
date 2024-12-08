@@ -1,0 +1,8 @@
+executable  = /afs/cern.ch/work/a/amgruber/public/ToyGen/ToyGenExecute.sh
+output      = /afs/cern.ch/work/a/amgruber/public/ToyGen/logs/ToyGenExecute$(ProcId).out
+error       = /afs/cern.ch/work/a/amgruber/public/ToyGen/logs/ToyGenExecute$(ProcId).err
+log         = /afs/cern.ch/work/a/amgruber/public/ToyGen/logs/ToyGenExecute$(ProcId).log
+RequestCpus = 1
++JobFlavour = "tomorrow"
+should_transfer_files = yes
+queue
