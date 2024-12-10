@@ -37,7 +37,12 @@ The repository is organized as follows:
 - **NuWro simulation scripts**:
   - Located in `NuWro/` for generating NuWro samples.
 - **Data Files**:
-  - `Fluxes.ND.root`: Neutrino flux data for the Near Detector.
-  - `flux_shifts_OffAxis.root`: Flux shift information for off-axis positions.
+  - `Fluxes.ND.root`: ND neutrino flux nominal data.
+  - `flux_shifts_OffAxis.root`: ND flux uncertainties for off-axis positions.
+- **Processed Data Files**:
+  - `.csv` files (`Nbins`, `BinWidths` and `BinCenters`) created by directly fetching the data from the TH2Jagged in the flux uncertainty file:
+    - `Nbins.csv` contains the number of bins in each off-axis position.
+    - `BinWidths.csv` contains the width in GeV for each off-axis, energy bin.
+    - `BinCenters.csv` contains the center of each energy bin in GeV.
 - **Analysis Notebooks**:
   - Jupyter Notebooks as outlined in the workflow above.
