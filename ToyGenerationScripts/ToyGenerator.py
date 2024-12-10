@@ -10,11 +10,11 @@ import time
 
 toy = sys.argv[1]
 
-files = ["/eos/home-a/amgruber/SWAN_projects/XSec_ROOT/TTreeMerges/proj"+str(i+1)+"_merged.root" for i in range(58)]
+files = ["/eos/home-a/amgruber/SWAN_projects/XSec_ROOT/TTreeMerges/proj"+str(i+1)+"_merged.root" for i in range(58)] # Change this to your preferred location; Merged trees can be produced using MergeTTrees.ipynb
 
 centers = []
 
-pwd = '/eos/user/a/amgruber/SWAN_projects/FluxTest/NewToys/'
+pwd = '/eos/user/a/amgruber/SWAN_projects/FluxTest/NewToys/' # Change this to your preferred location for BinCenters.csv
 with open(pwd+'BinCenters.csv', 'r') as read_obj:
     csv_reader = reader(read_obj)
     for row in csv_reader:
@@ -60,7 +60,7 @@ EbE_bins = np.load(pwd+'EbE_bins.npy')
 q3_cut = False
 
 ## loop
-folder = "BaseResults/"
+folder = "BaseResults/" # Change this to your folder of choice
 ofile_path = pwd+folder+"ToyEventRatesFixedToy"+str(toy)+".root"
 #####
 file = ROOT.TFile.Open(ofile_path,"recreate")
