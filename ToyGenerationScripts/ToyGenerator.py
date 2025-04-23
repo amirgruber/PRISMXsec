@@ -84,7 +84,7 @@ for oa_bin in range(58):
         Enu_true_hist.Fill(event.Enu_true,w)
         OmegaReco_hist.Fill(-event.ELep,w)
         OmegaTrue_hist.Fill(event.Enu_true-event.ELep,w)
-	ELep_hist.Fill(event.ELep,w)
+        ELep_hist.Fill(event.ELep,w)
         cnt += 1
     oa_file.Close()
     file = ROOT.TFile.Open(ofile_path,"update")

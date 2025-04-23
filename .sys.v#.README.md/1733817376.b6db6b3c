@@ -15,7 +15,6 @@ This repository facilitates the analysis and reproduction of results presented i
 2. **Cross-Section Calculations**:
    - `DiffXSec.ipynb`: Calculates differential cross-sections.
    - `IntegratedXSec.ipynb`: Computes integrated cross-sections.
-   - `PlotHadronicMass.ipynb`: Computes cross-sections as a function of hadronic mass (without systematics).
 
 In addition to the code used to produce the main plots of the paper, we also include the following:
 
