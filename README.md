@@ -12,10 +12,16 @@ This repository facilitates the analysis and reproduction of results presented i
    - `ToysROOTtoNumpy.ipynb`: Converts ROOT files to NumPy arrays for easier manipulation.
    - `NumpyToysToMeasurements.ipynb`: Converts off-axis toy measurements into virtual flux measurement, preparing it for cross-section calculation plots.
 
-2. **Cross-Section Calculations**:
+2. **Flux Matching Demonstrations**:
+   - `VirtualFluxConstruction.ipynb`: Can be used to generate custom virtual fluxes as well as the flux matching plot.
+   - `PlotRegularizationResults.ipynb`: Plots regularization impact on cross-section calculations, shown in the paper.
+
+3. **Cross-Section Calculations**:
    - `DiffXSec.ipynb`: Calculates differential cross-sections.
    - `IntegratedXSec.ipynb`: Computes integrated cross-sections.
+   - `CalculateBackground.ipynb`: Computes background estimations for the integrated cross-section measurements.
    - `PlotHadronicMass.ipynb`: Computes cross-sections as a function of hadronic mass (without systematics).
+   - `PlotRegularizationResults.ipynb`: Plots regularization impact on virtual fluxes
 
 In addition to the code used to produce the main plots of the paper, we also include the following:
 
